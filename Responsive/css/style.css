@@ -33,7 +33,7 @@ footer{
 /* Media Queries */
 	@media screen and(min-width:768px) and (max-width:959px){
 		#content{
-			background-color: black;
+			background-color:black;
 		}
 	}
 	@media screen and(min-width:480px) and (max-width:767px){
@@ -42,7 +42,7 @@ footer{
 		}
 	}
 	@media screen and(max-width:479px){
-		#content{
-			background-color: black;
+		body{
+			background-color: blue
 		}
 	}
