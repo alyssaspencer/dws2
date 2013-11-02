@@ -49,6 +49,7 @@ footer{
 	aside{
 		width:100%;
 		float:none;
+		padding:0;
 	}
 	img{
 		max-width: 60%;
@@ -65,6 +66,8 @@ footer{
 	aside{
 		width:100%;
 		float:none;
+		padding:0;
+
 	}
 	img{
 		display:none;
