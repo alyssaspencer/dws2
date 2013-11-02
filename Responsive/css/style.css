@@ -1,19 +1,21 @@
 body{
 	font:100%;
 	font-family:'Open Sans', sans-serif;
-	width:100%; /* 960px */
+	max-width: 960px;
+	margin:0 auto;
+
 }
 #page{
-	width:93.75%; /* 900px */
+	width:100%; /* 900px */
 	margin:0 auto;
+	overflow:hidden;
 }
 #content{
-	width:61.777778%; /* 556px */
+	width:65.888889%; /* 593px */
 	float:left;
 }
 h1{
 	font-weight: normal;
-	color:blue;
 	font-size:1.5em;
 }
 p{
@@ -24,25 +26,49 @@ img{
 }
 aside{
 	float:right;
-	width:23.555556%; /* 212px */
-	margin-left:1.1111111%;
+	width:25.111111%; /* 226px */
+	padding-left:2%;
 }
 footer{
 	clear:both;
 }
 /* Media Queries */
-	@media screen and(min-width:768px) and (max-width:959px){
-		#content{
-			background-color:black;
-		}
+@media screen and (min-width: 768px) and (max-width: 959px){
+	#page{
+		background-color: blue;
+		width:95%;
 	}
-	@media screen and(min-width:480px) and (max-width:767px){
-		#content{
-			background-color: black;
-		}
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	#page{
+		background-color: red;
+		width:90%;
 	}
-	@media screen and(max-width:479px){
-		body{
-			background-color: blue
-		}
+	#content{
+		width:100%;
+		float:none;
 	}
+	aside{
+		width:100%;
+		float:none;
+	}
+	img{
+		max-width: 60%;
+	}
+}
+@media only screen and (max-width: 479px){
+	#page{
+		width:90%;
+	}
+	#content{
+		width:100%;
+		float:none;
+	}
+	aside{
+		width:100%;
+		float:none;
+	}
+	img{
+		display:none;
+	}
+}
