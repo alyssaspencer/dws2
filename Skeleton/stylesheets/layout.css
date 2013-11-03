@@ -90,15 +90,9 @@ img{
 			width:95%;
 			margin:0 auto;
 		}
-		img{
-			width:80%;
-		}
-
+	}
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
-		h1{
-			font-size:1.85em;
-		}
 		#content,aside{
 			float:none;
 			width:95%;
@@ -108,7 +102,6 @@ img{
 			display:none;
 		}
 	}
-
 
 /* #Font-Face
 ================================================== */
