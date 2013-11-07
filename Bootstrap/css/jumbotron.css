@@ -2,10 +2,18 @@
 body {
   padding-top: 1.2em;
   padding-bottom: 20px;
-  width:80%;
-  margin-left: auto;
-  margin-right: auto;
+  width:100%;
   font-size:1.4em;
+}
+#content{
+	width:80%;
+	margin-left: auto;
+    margin-right: auto;
+}
+header{
+	width:80%;
+	margin-left: auto;
+    margin-right: auto;
 }
 .navbar-brand {
   margin-top: 0;
@@ -15,6 +23,9 @@ body {
   font-size: 1.9em;
 }
 .jumbotron{
+	width:80%;
+	margin-left: auto;
+    margin-right: auto;
 	background: #6ACEEB;
     border-radius: 1em;
 }
@@ -35,10 +46,8 @@ img{
     margin-left: auto;
     margin-right: auto
 }
-@media (min-width: 500px)(max-width: 768px) {
-	p{
-		width:50%;
-	}
+@media (min-width: 900px) and (max-width: 1300px){
+
 }
 @media (max-width: 479px) {
 	.jumbotron{
