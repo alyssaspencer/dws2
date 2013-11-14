@@ -1,0 +1,178 @@
+body{
+	font:100%;
+	font-family:'Open Sans', sans-serif;
+	max-width: 960px;
+	height: 100%;
+	margin:0 auto;
+	background-color:#F0F0F0;
+}
+/* Set page to be centered and have width 100% and to hide elements that overflow*/
+#page{
+	width:100%; /* 900px */
+	margin:0 auto;
+	overflow:hidden;
+}
+/* Content only takes 65% of the page width */
+#content{
+	width:65.888889%; /* 593px */
+	float:left;
+	height: 1%;
+}
+/* H1 Style */
+h1{
+	font-weight: normal;
+	font-size:1.5em;
+}
+/* H2 Style */
+h2{
+	font-weight: normal;
+	font-size:1.3em;
+}
+/* p Style */
+p{
+	font-size:0.9em;
+}
+/* Center image and them be responsive */
+img{
+	max-width: 100%;
+	display:block;
+	margin-left: auto;
+    margin-right: auto;
+}
+/* Aside width set to 25% of the page */
+aside{
+	float:right;
+	width:25.111111%; /* 226px */
+	padding-left:2%;
+}
+/* Relative position footer */
+footer{
+	text-align: center;
+	width: 100%;
+	height: 8em;
+	clear:both;
+	margin: 0 auto;
+	position:relative;
+}
+footer #first{
+	width: 25%;
+/* Sets first footer element to be at 0% of the footer width */
+	left: 0%;
+	position:absolute;
+}
+footer #second{
+	width: 25%;
+	z-index: 1;
+/* Sets second footer element to be at 25% of the footer width */
+	left: 25%;
+	position:absolute;
+}
+footer #third{
+	width: 25%;
+/* Sets third footer element to be at 50% of the footer width */
+	left: 50%;
+	position:absolute;
+}
+footer #fourth{
+	width: 25%;
+/* Sets third footer element to be at 75% of the footer width */
+	left: 75%;
+	position:absolute;
+}
+footer a{
+	font-size: 0.8em;
+	padding: 0px;
+}
+h5{
+    padding: 0;
+    margin: 1em;
+}
+/* Media Queries */
+@media screen and (min-width: 768px) and (max-width: 959px){
+	#page{
+		width:95%;
+	}
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	#page{
+		width:90%;
+	}
+	#content{
+		width:100%;
+		float:none;
+	}
+	aside{
+		width:100%;
+		float:none;
+		padding:0;
+	}
+	img{
+		max-width: 60%;
+	}
+/* Display as 2 columns */
+	footer{
+		height: 13em;
+	}
+	footer #first{
+		top: 50%;
+		width: 50%;
+		left: 0%;
+	}
+	footer #second{	
+		top: 50%;
+		width: 50%;
+		left: 50%;
+	}
+	footer #third{
+		width: 50%;
+		left: 0%;
+	}
+	footer #fourth{
+		width: 50%;
+		left: 50%;
+	}
+}
+@media only screen and (max-width: 479px){
+	#page{
+		width:90%;
+	}
+	#content{
+		width:100%;
+		float:none;
+	}
+	aside{
+		width:100%;
+		float:none;
+		padding:0;
+
+	}
+	img{
+		display:none;
+	}
+/* Display as 1 column */
+	footer{
+		height: 30em;
+	}
+	footer #first{
+		top: 75%;
+		width: 100%;
+		left: 0%;
+		
+	}
+	footer #second{	
+		top: 50%;
+		width: 100%;
+		left: 0%;
+	}
+	footer #third{
+		top: 25%;
+		width: 100%;
+		left: 0%;
+	}
+	footer #fourth{
+		top: 0%;
+		width: 100%;
+		left: 0%;
+
+	}
+}
