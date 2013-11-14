@@ -1,0 +1,70 @@
+body{
+	font:100%;
+	font-family:'Open Sans', sans-serif;
+	max-width: 960px;
+	height: 100%;
+	margin:0 auto;
+	background-color:#F0F0F0;
+}
+/* Set page to be centered and have width 100% and to hide elements that overflow*/
+#page{
+	font-size:0.9em;
+	width:50%; /* 900px */
+	margin:0 auto;
+	overflow:hidden;
+}	
+
+#survey div{
+	margin-bottom:1em;
+	width:100%;
+	float:left;
+}
+#survey input{
+	float:right;
+}
+#survey input[type="text"]{
+	width:50%;
+}
+#survey span#range{
+	float:left;
+	font-size:2em;
+	width:100%;
+	clear:both;
+	text-align:center;
+}
+#survey input[type="submit"]{
+	float:right;
+	height:2em;
+}
+#survey #anothersurvey{
+	font-size: 0.5em;
+	text-align: right;
+}
+#survey #agree{
+	text-align: right;
+	font-size: 0.5em;
+}
+#survey #countrystate{
+	text-align: right;
+}
+/* Media Queries */
+@media screen and (min-width: 768px) and (max-width: 959px){
+	#page{
+		width:70%;
+	}	
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	#page{
+		width:80%;
+	}	
+}
+@media only screen and (max-width: 479px){
+	#page{
+		width:95%;
+		text-align: center;
+	}	
+	#survey #countrystate{
+		text-align: left;
+		font-size:0.3em;
+	}
+}

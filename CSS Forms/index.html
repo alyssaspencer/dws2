@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<script type="text/javascript">
+	function showValue(newValue)
+	{
+		document.getElementById('range').innerHTML=newValue;
+	}
+</script>
+<body>
+    <div id="page">
+        <header>
+            <h1>Survey</h1>
+        </header>
+
+        <div id="content">
+			
+			<form id='survey' method='post'>
+			<fieldset>
+			<legend>Test one</legend>
+			<div>
+				<label for='name'>Your Name</label>
+				<input id='name' name='name' type='text' placeholder='e.g. John Smith' required aria-required='true'>
+			</div>
+			<div>
+				<label for='address'>Your Address</label>
+				<input id='address' name='address' type='text' placeholder='100 SW 10th St' required aria-required='true'>
+			</div>
+			<div id="countrystate">
+				<label for='address'>Country</label>
+				<select>
+					<option value ="unitedstates">United States</option>
+					<option value ="other">Other</option>
+				</select>
+				<label for='State'>State</label>
+				<select>
+					<option value ="florida">Florida</option>
+					<option value ="other">Other</option>
+				</select>
+			</div>
+			<div>
+				<label for='color'>Your Favorite Color</label>
+				<input id='color' name='color' type='color' required aria-required='true'>
+			</div>
+			<div>
+				<label for='desc'>Why is this your favorite color?</label>
+				<input type="text" maxlength="30" placeholder="Less than 30 characters." />
+			</div>
+			<div>
+				<label for='birthday'>Your Birthday</label>
+				<input id='birthday' name='birthday' type='date' required aria-required='true'>
+			</div>
+			<div>
+				<label for='tel'>Your Telephone Number</label>
+				<input id='tel' name='tel' type='tel' placeholder='123-456-7890' required aria-required='true'>
+			</div>
+			<div>
+				<label for='employment'>Place of Employment</label>
+				<input id ='employment' name='employment' type="text" placeholder="e.g Google Inc" required aria-required='true'>
+			</div>
+			<div>
+				<label for='birthday'>Start Date</label>
+				<input id='startdate' name='startdate' type='date' required aria-required='true'>
+			</div>
+			<div>
+				<label for='years'>For how many years have you worked there?</label>
+				<input id='years' name='years' type='number' min='0' required aria-required='true'>
+			</div>
+			<div>
+				<label for='rate'>From 1 to 10, How would you rate this survey?</label>
+				<input id='rate' name='rate' type='range' min='1' max='10' value='5' onChange="showValue(this.value)">
+				<span id='range'>5</span>
+			</div>
+			<div id="agree">
+			<label id='agree' for='agree'>Receive notifications of new surveys</label>
+			<input name="agree" value="agree" type="checkbox">
+			</div>
+			<div id="anothersurvey">
+			<label>Would you like to do another survey?</label>            
+			<input type ="radio" name="anothersurvey" id="yes" value="yes">
+			<label for="yes">Yes</label>
+			<input type="radio" name="anothersurvey" id="no" value="no" checked="checked">
+			<label for="yes">No</label>
+			</div>
+			<input type="submit">
+			</fieldset>
+			</form>
+        </div>
+
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
