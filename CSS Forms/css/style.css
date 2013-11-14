@@ -13,7 +13,9 @@ body{
 	margin:0 auto;
 	overflow:hidden;
 }	
-
+header{
+	color:#d71e31;
+}
 #survey div{
 	margin-bottom:1em;
 	width:100%;
@@ -35,6 +37,8 @@ body{
 #survey input[type="submit"]{
 	float:right;
 	height:2em;
+	background:#d71e31;
+	border-color:#ff001b; 
 }
 #survey #anothersurvey{
 	font-size: 0.5em;
