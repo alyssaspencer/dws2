@@ -12,6 +12,13 @@
     <!--[if lt IE 9]>
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
+	<script src="js/jquery-2.0.3.js"></script>
+	<script src="js/js-webshim/minified/extras/modernizr-custom.js"></script>
+	<script src="js/js-webshim/minified/polyfiller.js"></script>
+	<script>
+		//load all defined
+		$.webshims.polyfill();
+	</script>
 </head>
 <body>
     <div id="page">
