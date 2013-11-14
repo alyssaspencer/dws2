@@ -40,12 +40,12 @@
 				<input id='address' name='address' type='text' placeholder='100 SW 10th St' required aria-required='true'>
 			</div>
 			<div id="countrystate">
-				<label for='address'>Country</label>
+				<label for='country'>Country</label>
 				<select>
 					<option value ="unitedstates">United States</option>
 					<option value ="other">Other</option>
 				</select>
-				<label for='State'>State</label>
+				<label for='state'>State</label>
 				<select>
 					<option value ="florida">Florida</option>
 					<option value ="other">Other</option>
@@ -57,7 +57,7 @@
 			</div>
 			<div>
 				<label for='desc'>Why is this your favorite color?</label>
-				<input type="text" maxlength="30" placeholder="Less than 30 characters." />
+				<input id='desc' name='desc' type="text" maxlength="30" placeholder="Less than 30 characters." />
 			</div>
 			<div>
 				<label for='birthday'>Your Birthday</label>
@@ -85,8 +85,8 @@
 				<span id='range'>5</span>
 			</div>
 			<div id="agree">
-			<label id='agree' for='agree'>Receive notifications of new surveys</label>
-			<input name="agree" value="agree" type="checkbox">
+			<label id='notifications' for='notifications'>Receive notifications of new surveys</label>
+			<input name="notifications" value="notifications" type="checkbox">
 			</div>
 			<div id="anothersurvey">
 			<label>Would you like to do another survey?</label>            
