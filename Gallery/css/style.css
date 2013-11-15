@@ -24,12 +24,9 @@ img{
 	float:left;
 	margin-right:2%;
 }
+/* First Image Effects */
 .first:hover{
 	-webkit-transform: rotate(360deg);
-}
-.first:hover + .firstcaption{
-	display:block;
-
 }
 .first{
 	width:100%;
@@ -38,77 +35,96 @@ img{
 	-webkit-transition-timing-function: ease;
 	-webkit-transition-delay: 0s; 
 }
+/* Display Caption */
+.first:hover + .firstcaption{
+	display:block;
+}
+/* Hide caption */
 .firstcaption{
 	display:none;
 	width:75%;
 }
+/* Second Image Effects*/
 .second:hover{
 	-webkit-transform: scale(0.5);
-}
-.second:hover + .secondcaption{
-	display:block;
-
 }
 .second{
 	width:100%;
 	-webkit-transition:1s;
 }
+/* Display Caption */
+.second:hover + .secondcaption{
+	display:block;
+}
+/* Hide caption */
 .secondcaption{
 	display:none;
 	width:75%;
 }
+/* Third Image Effects*/
 .third:hover{
 	-webkit-transform: translate(2%,3%);
-}
-.third:hover + .thirdcaption{
-	display:block;
 }
 .third{
 	width:100%;
 	-webkit-transition:1s;
 }
+/* Display Caption */
+.third:hover + .thirdcaption{
+	display:block;
+}
+/* Hide caption */
 .thirdcaption{
 	display:none;
 	width:75%;
 }
+/* Fourth Image Effects*/
 .fourth:hover{
 	-webkit-transform: skew(5deg, 10deg);
-}
-.fourth:hover + .fourthcaption{
-	display:block;
 }
 .fourth{
 	width:100%;
 	-webkit-transition:1s;
 }
+/* Display Caption */
+.fourth:hover + .fourthcaption{
+	display:block;
+}
+/* Hide caption */
 .fourthcaption{
 	display:none;
 	width:75%;
 }
+/* Fifth Image Effects*/
 .fifth:hover{
 	-webkit-transform: skew(5deg, 10deg);
-}
-.fifth:hover + .fifthcaption{
-	display:block;
 }
 .fifth{
 	width:100%;
 	-webkit-transition:1s;
 }
+/* Display Caption */
+.fifth:hover + .fifthcaption{
+	display:block;
+}
+/* Hide caption */
 .fifthcaption{
 	display:none;
 	width:75%;
 }
+/* Sixth Image Effects*/
 .sixth:hover{
 	-webkit-transform: skew(5deg, 10deg);
-}
-.sixth:hover + .sixthcaption{
-	display:block;
 }
 .sixth{
 	width:100%;
 	-webkit-transition:1s;
 }
+/* Display Caption */
+.sixth:hover + .sixthcaption{
+	display:block;
+}
+/* Hide caption */
 .sixthcaption{
 	display:none;
 	width:75%;
