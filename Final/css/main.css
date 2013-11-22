@@ -1,0 +1,149 @@
+/* Space out content a bit */
+body {
+	padding-top:1.2em;
+	padding-bottom:20px;
+	width:100%;
+	font-size:1.4em;
+	background:#FFF;
+}
+
+#content {
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+header {
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.navbar {
+	background:#D7DADB;
+}
+.navbar-default .navbar-nav > .active > a,.navbar-default .navbar-nav > .active > a:hover,.navbar-default .navbar-nav > .active > a:focus {
+	background:#6DBCDB;
+}
+.dropdown-menu > .active > a,.dropdown-menu > .active > a:hover,.dropdown-menu > .active > a:focus
+.navbar-brand {
+	background:#6DBCDB;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    background:#6DBCDB;
+}
+.navbar-brand {
+	margin-top:0;
+	margin-bottom:0;
+	line-height:.7em;
+	padding-bottom:.1em;
+	font-size:1.9em;
+}
+
+.jumbotron {
+	width:80%;
+	position: relative;
+	margin-left:auto;
+	margin-right:auto;
+	background:none;
+    position: relative;
+}
+.jumbotron:after {
+     content:"";
+     background: url("../images/background.jpg");
+     background-size:100% 100%;
+     background-repeat: none;
+     opacity: 0.2;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     position: absolute;
+     z-index: -1;
+     border-radius: 1em;
+ }
+.jumbotron h1 {
+	font-size:3em;
+}
+
+h2 {
+	text-align:center;
+}
+.row {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+footer {
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	color:#777;
+}
+
+input {
+	width:25%;
+}
+
+img {
+	max-width:100%;
+	height:auto;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 30%;
+    padding-top: 5em; height: 0; overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+.col-md-4 img:hover{
+	-webkit-transform: scale(1.1);
+}
+.col-md-4 img{
+    -webkit-transition:1s;
+}
+#upload{
+	text-align: right;
+}
+/* Media Queries */
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	input {
+		width:50%;
+	}
+	.gallery img{
+		width:80%;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	input {
+		width:75%;
+	}
+	.col-md-4 img:hover{
+	-webkit-transform: scale(0.9);
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	.jumbotron {
+		display:none;
+	}
+	.video-container {
+		display:none;
+	}
+	
+	input {
+		width:80%;
+	}
+	.col-md-4 img:hover{
+	-webkit-transform: scale(0.9);
+	}
+}
